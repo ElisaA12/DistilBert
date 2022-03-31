@@ -31,10 +31,12 @@ while True:
 
     textExtractor1.extract()
     # textExtractorPipe = TextExtractorPipe()
-
+    
+    #Aggiunge un componente alla pipeline di elaborazione.
     nlp.add_pipe('sentencizer')
     # doc = nlp(textExtractorPipe.extract())
     doc = nlp(textExtractor1.search())
+    #itera le frasi in un documenti eliminando il primo e l'ultim carettere
     sentences = [sent.text.strip() for sent in doc.sents]
     sentences = [string for string in sentences if string != ""]
     questionProcessor = QuestionProcessor(nlp)
