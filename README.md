@@ -5,7 +5,12 @@ Successivamente si inserisce, sempre  da linea di codice, la pagina a cui si vuo
 
 Verra' estratta da wikepedia il contenuto la pagina corrispondente a quel nome, a quel codice, nella ingua scelta.
 Sara' chiesto un ulteriore comando in input che andra' a selezionare dove si vuole eseguire a ricerca, se sul testo o se sulle tabelle della pagina wikipedia.
+Con una serie di elaborazioni del testo, il sistema salva il testo in una cartella denominata text, per poi andarla a ricercare quando richiesta.
+
 Successivamente si potra' inserire la domanda in questione.
+Si procedera' ad una seconda puliza del testo, ovvero della frase di domanda, per estrarre le parole chiave.
+
+
 
 
 
