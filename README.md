@@ -10,6 +10,8 @@ Con una serie di elaborazioni del testo, il sistema salva il testo in una cartel
 Successivamente si potra' inserire la domanda in questione.
 Si procedera' ad una seconda puliza del testo, ovvero della frase di domanda, per estrarre le parole chiave.
 
+Infine il sistema riportera' la domanda corretta.
+
 
 
 
