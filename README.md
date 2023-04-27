@@ -18,7 +18,7 @@ Creiamo un virtual environment
 python -m venv bert
 bert\Scripts\activate
 `
-\
+
 
 Apriamo Visual Studio Code
 
@@ -26,7 +26,6 @@ Apriamo Visual Studio Code
 code .
 `
 
-\
 
 Installiamo le dipendenze
 `
