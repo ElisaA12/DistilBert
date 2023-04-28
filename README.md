@@ -1,6 +1,6 @@
 Implementazione di un sistema di question answring in italiano.
 
-Il programma parte chiedendo all'utrente di inserire il nome della pagina a cui si vuole fare la domanda. Il sistema stampa un elenco di pagine relative a quel nome e l'utente dovra' scegliere il numero della pagina secondo l'ordine dell'elenco di output.
+Il programma parte chiedendo all'utente di inserire il nome della pagina a cui si vuole fare la domanda. Il sistema stampa un elenco di pagine relative a quel nome e l'utente dovra' scegliere il numero della pagina secondo l'ordine dell'elenco di output.
 
 Verra' estratta da wikepedia il contenuto la pagina corrispondente a quel nome e a quel numero.
 Sara' chiesto un ulteriore comando in input che andra' a selezionare dove si vuole eseguire la ricerca, se sul testo o se sulle tabelle della pagina wikipedia.
