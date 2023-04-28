@@ -6,33 +6,33 @@ from answer_retriever import AnswerRetriever
 import wikipedia
 import os
 
-lingua = input('Insert the language you want [en , it]:')
+#lingua = input('Insert the language you want [en , it]:')
 
-wikipedia.set_lang(lingua)
-page = input('Insert the name of the page:')
+wikipedia.set_lang('it')
+page = input('Inserisci il nome della pagina:')
 
 search = wikipedia.search(page, results=15, suggestion=False)
 print(search)
-id = input('Select the number of the page you want:')
+id = input('Selezionail numero della pagina:')
 id = int(id)
 print(search[id])
 namePage = search[id]
-contesto = input('Do you want research in the table or in the text? [table , text]: ')
+contesto = input('Vuoi ricercare nella tabella o nel testo?? [tabel , text]: ')
 
 os.chdir('./Desktop/DistilBert-main')
 
 while True:
-    originalQuestion = input('Insert the question:').lower()
-    if lingua == 'it':
-        textExtractor = TextExtractor(namePage, "it", contesto)
-        # inizializzo la funzione nlp della lingua italiana
-        
-        try:
-            spacy.load("it_core_news_sm")  # md
-        except:
-            print("Installazione lingua italiana ")
-            os.system("python -m spacy download it_core_news_sm")
-        nlp = spacy.load("it_core_news_sm")  # md
+    originalQuestion = input('Inserisci la domanda:').lower()
+    #if lingua == 'it':
+    textExtractor = TextExtractor(namePage, "it", contesto)
+    # inizializzo la funzione nlp della lingua italiana
+    
+    try:
+        spacy.load("it_core_news_sm")  # md
+    except:
+        print("Installazione lingua italiana ")
+        os.system("python -m spacy download it_core_news_sm")
+    nlp = spacy.load("it_core_news_sm")  # md
     '''
     else:
         textExtractor = TextExtractor(namePage, "en", contesto)
@@ -59,9 +59,9 @@ while True:
     answerRetriever = AnswerRetriever()
 
     questionContext = contextRetriever.getContext(sentences, questionProcessor.process(originalQuestion))
-    answer = answerRetriever.getAnswer(originalQuestion, questionContext, lingua)
-    print("\nrisposta:  ", answer)
+    answer = answerRetriever.getAnswer(originalQuestion, questionContext, 'it')
+    print("\nRisposta:  ", answer)
 
-    another = input('\nDo you want ask another question? [yes , no]: ')
+    another = input('\nVuoi fare un\'altra domanda? [yes , no]: ')
     if another.lower() == "no":
         break
