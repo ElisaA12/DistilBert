@@ -12,23 +12,18 @@ Si procedera' ad una seconda puliza del testo, ovvero della frase di domanda, pe
 
 Infine il sistema riportera' la domanda corretta.
 
-Creiamo un virtual environment
+
 
 `
+# Creiamo un virtual environment
 python -m venv bert
 bert\Scripts\activate
-`
 
-
+#
 Apriamo Visual Studio Code
-
-`
 code .
-`
 
-
-Installiamo le dipendenze
-`
+#Installiamo le dipendenze
 pip install -U spacy
 pip install wikipedia
 pip install rank-bm25
@@ -37,8 +32,6 @@ pip install transformers
 pip install lxml
 python -m spacy download it_core_news_sm
 `
-
-
 
 
 
