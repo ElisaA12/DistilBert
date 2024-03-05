@@ -1,4 +1,5 @@
-Implementazione di un sistema di question answring in italiano.
+# Implementazione di un sistema di question answring in italiano.
+*Elisa Acciari A.A. 2020/2021 Università degli Studi di Perugia*
 
 Il programma parte chiedendo all'utente di inserire il nome della pagina a cui si vuole fare la domanda. Il sistema stampa un elenco di pagine relative a quel nome e l'utente dovra' scegliere il numero della pagina secondo l'ordine dell'elenco di output.
 
